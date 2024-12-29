@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayerNameCell" rowHeight="278" id="bVN-tX-4nO" customClass="PlayerNameCell" customModule="Judgement_Card" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="697" height="278"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bVN-tX-4nO" id="W1b-ga-VVb">
+                <rect key="frame" x="0.0" y="0.0" width="697" height="278"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ith-aG-OfH">
+                        <rect key="frame" x="25" y="11.33333333333333" width="35" height="31.666666666666671"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="IeV-yY-gDj"/>
+                            <constraint firstAttribute="width" constant="35" id="ltL-f9-kvd"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEx-WC-QXu">
+                        <rect key="frame" x="65" y="2" width="627" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="l78-pM-baY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aEx-WC-QXu" secondAttribute="bottom" constant="2" id="5Hm-eC-ctg"/>
+                    <constraint firstItem="aEx-WC-QXu" firstAttribute="top" secondItem="W1b-ga-VVb" secondAttribute="top" constant="2" id="BwH-8n-GzR"/>
+                    <constraint firstAttribute="trailing" secondItem="aEx-WC-QXu" secondAttribute="trailing" constant="5" id="EHl-42-Qpb"/>
+                    <constraint firstItem="aEx-WC-QXu" firstAttribute="leading" secondItem="ith-aG-OfH" secondAttribute="trailing" constant="5" id="IKi-f1-7y2"/>
+                    <constraint firstItem="ith-aG-OfH" firstAttribute="leading" secondItem="W1b-ga-VVb" secondAttribute="leadingMargin" constant="5" id="UO4-8T-J98"/>
+                    <constraint firstItem="ith-aG-OfH" firstAttribute="centerY" secondItem="aEx-WC-QXu" secondAttribute="centerY" id="drO-sP-qjZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="txtPlayerName" destination="aEx-WC-QXu" id="To5-KI-7s3"/>
+            </connections>
+            <point key="canvasLocation" x="75.572519083969468" y="-111.26760563380282"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
+</document>
