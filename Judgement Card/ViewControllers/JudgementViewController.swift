@@ -91,7 +91,7 @@ class JudgementViewController: UIViewController {
             let dict = UserDefaultHelper.shared.getPlayerDetails()
             var str = ""
             for key in dict.keys {
-                str.append("\(key) : \(dict[key]!) ->")
+                str.append("\(key) : \(dict[key]!)\n")
             }
             print(str + "TESTING")
             lblScore.text = str
